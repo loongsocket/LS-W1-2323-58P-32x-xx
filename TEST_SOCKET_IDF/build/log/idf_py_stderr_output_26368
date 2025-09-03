@@ -1,0 +1,1 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\USER\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DSDKCONFIG='f:\3_TRABAJO_JUAN\5_LED32\DOC_ESP32\Henk_Grobbelaar\TEST_SOCKET\blink\sdkconfig' -DCCACHE_ENABLE=1 F:\3_TRABAJO_JUAN\5_LED32\DOC_ESP32\Henk_Grobbelaar\TEST_SOCKET\blink

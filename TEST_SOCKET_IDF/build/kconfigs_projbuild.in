@@ -1,0 +1,6 @@
+source "C:/Users/USER/esp/v5.5/esp-idf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/USER/esp/v5.5/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "C:/Users/USER/esp/v5.5/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "C:/Users/USER/esp/v5.5/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/USER/esp/v5.5/esp-idf/components/partition_table/Kconfig.projbuild"
+source "F:/3_TRABAJO_JUAN/5_LED32/DOC_ESP32/Henk_Grobbelaar/TEST_SOCKET/blink/main/Kconfig.projbuild"
