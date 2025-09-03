@@ -387,11 +387,15 @@ static void task_irq_handler(void *arg)
 
             uint8_t intf_a = mcp23s17_read_register(INTFA);
             uint8_t intf_b = mcp23s17_read_register(INTFB);
+
+            
             uint8_t cap_a  = mcp23s17_read_register(INTCAPA); // reading clears
             uint8_t cap_b  = mcp23s17_read_register(INTCAPB);
 
             ESP_LOGI(TAG, "IRQ MCP INTF_A=0x%02X INTF_B=0x%02X CAP_A=0x%02X CAP_B=0x%02X",
                      intf_a, intf_b, cap_a, cap_b);
+
+            mcp_clear_irq();
         }
     }
 }
@@ -413,7 +417,7 @@ static void pwm_set_duty(int channel, int percent)
 }
 
 // ==============================
-// app_main
+// app_main Loong Socket JTAG & PROG.
 // ==============================
 void app_main(void)
 {
