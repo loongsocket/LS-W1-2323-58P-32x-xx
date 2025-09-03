@@ -1,1 +1,27 @@
 # ESP-IDF .gitignore
+
+# Compiled build folders
+/build/
+/**/build/
+
+# VSCode settings
+.vscode/
+
+# Logs
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# ESP-IDF specific
+sdkconfig.old
+*.elf
+*.bin
+*.map
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
