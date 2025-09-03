@@ -25,3 +25,7 @@ sdkconfig.old
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
+
+clone/
+*_CLONE/
+*/clone/
