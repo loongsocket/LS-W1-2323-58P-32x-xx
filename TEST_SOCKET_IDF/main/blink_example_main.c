@@ -1,8 +1,8 @@
 /*
- * Blink + Peripherals Example (ESP32 + MCP3208 + MCP23S17 + PWM + UART)
+ * LonngSocket
  *
- * This refactor keeps your original behavior but organizes the code and
- * adds detailed English comments explaining what each part does.
+ * Blink + Peripherals Example (ESP32 + MCP3208 + MCP23S17 + PWM + UART)
+ * 
  *
  * Toolchain: ESP-IDF
  */
@@ -541,13 +541,13 @@ void app_main(void)
         mcp23s17_write_register(OLATA, gpioa_led_state);
         vTaskDelay(pdMS_TO_TICKS(1));
 
-        // Read GPIOB (MCP23S17 inputs). Your original code inverted the bits.
-        uint8_t inputs = mcp23s17_read_register(GPIOB);
-        inputs = (uint8_t)~inputs;
+        
+        uint8_t inputs = mcp23s17_read_register(GPIOB); // Read GPIOB (MCP23S17 inputs)
+        inputs = (uint8_t)~inputs;                      // Inverted the bits.
         len += snprintf(msg + len, sizeof(msg) - len, "GPIOB Inputs: 0x%02X\r\n", inputs);
         ESP_LOGI(TAG, "GPIOB Inputs: 0x%02X", inputs);
 
-        // Send the consolidated status through UART1
+        // Send the info data through UART1
         uart_write_bytes(UART_PORT, msg, strlen(msg));
     }
 }
