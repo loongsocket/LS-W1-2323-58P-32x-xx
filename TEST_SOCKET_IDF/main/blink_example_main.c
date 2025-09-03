@@ -23,7 +23,7 @@
 
 #include "led_strip.h"
 
-//v2
+//v3
 
 // ==============================
 // Configuración / Defines
