@@ -29,3 +29,7 @@ cmake_install.cmake
 clone/
 *_CLONE/
 */clone/
+
+clone/
+*_CLONE/
+*/clone/
